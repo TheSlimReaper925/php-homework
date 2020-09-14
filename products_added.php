@@ -1,10 +1,6 @@
 <?php
-
-	$servername="localhost";
-	$username="root";
-	$password="";
-	$db="products";
-	$conn= new mysqli($servername, $username, $password, $db);
+	
+	require_once("db.php");
 
 	if (isset($_POST["name"],$_POST["description"])) {
 		
